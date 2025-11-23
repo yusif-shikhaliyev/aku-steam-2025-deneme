@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AKUSTEAM 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              tech: {
+                bg: 'var(--tech-bg)',
+                light: 'var(--tech-light)',
+                accent: 'var(--tech-accent)',
+                slate: 'var(--tech-slate)',
+                white: 'var(--tech-white)',
+              }
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'float': 'float 3s ease-in-out infinite',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        /* Dark Mode (Default) */
+        --tech-bg: #0A192F;
+        --tech-light: #112240;
+        --tech-accent: #64FFDA;
+        --tech-slate: #8892B0;
+        --tech-white: #CCD6F6;
+      }
+
+      body.light-mode {
+        /* Light Mode */
+        --tech-bg: #F0F4F8;
+        --tech-light: #FFFFFF;
+        --tech-accent: #0D9488; /* Darker Teal for contrast */
+        --tech-slate: #486581;
+        --tech-white: #102A43;
+      }
+
+      body {
+        background-color: var(--tech-bg);
+        color: var(--tech-slate);
+        font-family: 'Inter', sans-serif;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--tech-bg);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--tech-light); 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--tech-accent); 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
