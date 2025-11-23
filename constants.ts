@@ -800,19 +800,7 @@ export const INITIAL_MENTORS: Mentor[] = [
     image: "/images/mentors/nargiz.png",
     social: {}
   },
-  {
-    id: 4,
-    name: "Ayxan Bağırlı",
-    role: {
-      AZE: "Mentor",
-      ENG: "Technical staff / Mentor",
-      TR: "Teknik personel / Mentor",
-      RU: "Технический персонал / Ментор"
-    },
-    // Fayl yolu: public/images/mentors/ayxan.png
-    image: "/images/mentors/ayxan.png",
-    social: {}
-  }
+
   
 ];
 
