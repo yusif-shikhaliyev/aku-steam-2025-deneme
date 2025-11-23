@@ -728,6 +728,7 @@ export const INITIAL_PROJECTS: Project[] = [
 ];
 
 export const INITIAL_MENTORS: Mentor[] = [
+  // Üst sıra - 2 kişi
   {
     id: 5,
     name: "Xanoğlan Hüseynev",
@@ -754,6 +755,7 @@ export const INITIAL_MENTORS: Mentor[] = [
     image: "/images/mentors/zumrud.png",
     social: {}
   },
+  // Alt sıra - 4 kişi
   {
     id: 2,
     name: "Gülsüm Bədirzadə",
@@ -807,8 +809,8 @@ export const INITIAL_MENTORS: Mentor[] = [
       TR: "Teknik personel / Mentor",
       RU: "Технический персонал / Ментор"
     },
-    // Fayl yolu: public/images/mentors/nargiz.png
-    image: "/images/mentors/nargiz.png",
+    // Fayl yolu: public/images/mentors/ayxan.png
+    image: "/images/mentors/ayxan.png",
     social: {}
   }
   

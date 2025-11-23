@@ -33,12 +33,61 @@ export const Mentors: React.FC = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {mentors.map((mentor, index) => (
+        {/* Üst sıra - 2 kişi */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8 justify-center max-w-4xl mx-auto">
+          {mentors.slice(0, 2).map((mentor, index) => (
             <div 
               key={mentor.id}
               className="group bg-tech-light/30 backdrop-blur-sm rounded-xl p-6 border border-tech-slate/10 hover:border-tech-accent/40 transition-all duration-300 hover:-translate-y-2 animate-fade-in-up"
               style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className="relative w-32 h-32 mx-auto mb-6">
+                <div className="absolute inset-0 bg-tech-accent/20 rounded-full blur-lg group-hover:bg-tech-accent/40 transition-colors"></div>
+                <img 
+                  src={mentor.image} 
+                  alt={mentor.name} 
+                  className="relative w-full h-full object-cover rounded-full border-2 border-tech-slate/20 group-hover:border-tech-accent transition-colors"
+                />
+              </div>
+
+              <div className="text-center mb-6">
+                <h3 className="text-xl font-bold text-tech-white mb-2">{mentor.name}</h3>
+                <p className="text-tech-accent text-sm font-mono">{mentor.role[language]}</p>
+              </div>
+
+              <div className="flex justify-center gap-4 pt-4 border-t border-tech-slate/10">
+                {mentor.social.instagram && (
+                  <a href={mentor.social.instagram} className="text-tech-slate hover:text-[#E1306C] transition-colors transform hover:scale-110">
+                    <Instagram size={20} />
+                  </a>
+                )}
+                {mentor.social.facebook && (
+                  <a href={mentor.social.facebook} className="text-tech-slate hover:text-[#1877F2] transition-colors transform hover:scale-110">
+                    <Facebook size={20} />
+                  </a>
+                )}
+                {mentor.social.linkedin && (
+                  <a href={mentor.social.linkedin} className="text-tech-slate hover:text-[#0077B5] transition-colors transform hover:scale-110">
+                    <Linkedin size={20} />
+                  </a>
+                )}
+                {mentor.social.x && (
+                  <a href={mentor.social.x} className="text-tech-slate hover:text-white transition-colors transform hover:scale-110" aria-label="X (Twitter)">
+                    <Twitter size={20} />
+                  </a>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Alt sıra - 4 kişi */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {mentors.slice(2).map((mentor, index) => (
+            <div 
+              key={mentor.id}
+              className="group bg-tech-light/30 backdrop-blur-sm rounded-xl p-6 border border-tech-slate/10 hover:border-tech-accent/40 transition-all duration-300 hover:-translate-y-2 animate-fade-in-up"
+              style={{ animationDelay: `${(index + 2) * 0.1}s` }}
             >
               <div className="relative w-32 h-32 mx-auto mb-6">
                 <div className="absolute inset-0 bg-tech-accent/20 rounded-full blur-lg group-hover:bg-tech-accent/40 transition-colors"></div>
