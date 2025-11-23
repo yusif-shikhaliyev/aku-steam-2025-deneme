@@ -1,21 +1,18 @@
 
 import React, { useEffect, useState } from 'react';
-import { Image as ImageIcon, Video, X, ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
+import { Image as ImageIcon, X, ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { getGeneralGallery, getGeneralVideos } from '../services/dataService';
+import { getGeneralGallery } from '../services/dataService';
 
 export const GeneralGallery: React.FC = () => {
   const { t } = useLanguage();
   const [images, setImages] = useState<string[]>([]);
-  const [videos, setVideos] = useState<string[]>([]);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   useEffect(() => {
     const loadData = async () => {
       const galleryData = await getGeneralGallery();
-      const videosData = await getGeneralVideos();
       setImages(galleryData);
-      setVideos(videosData);
     };
     loadData();
   }, []);
@@ -47,30 +44,6 @@ export const GeneralGallery: React.FC = () => {
             {t('section_gallery')}
           </h2>
         </div>
-
-        {/* Videos Section */}
-        {videos.length > 0 && (
-          <div className="mb-16">
-            <div className="flex items-center gap-2 mb-6 text-tech-white font-bold text-xl">
-               <Video className="text-tech-accent" />
-               <span>Videos</span>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {videos.map((vid, idx) => (
-                <div key={idx} className="w-full aspect-video bg-black rounded-lg overflow-hidden border border-tech-slate/20 shadow-lg">
-                   <video 
-                      src={vid} 
-                      controls 
-                      className="w-full h-full object-cover"
-                      onError={(e) => e.currentTarget.parentElement!.style.display = 'none'} // Hide if missing
-                    >
-                      Your browser does not support the video tag.
-                    </video>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
 
         {/* Images Section */}
         <div>

@@ -732,7 +732,7 @@ export const INITIAL_MENTORS: Mentor[] = [
     id: 5,
     name: "Xanoğlan Hüseynev",
     role: {
-      AZE: "Təşkilatçı / İqtisad elmlər namizədi, dosent",
+      AZE: "Mühasibat və Kompüter Mühəndisliyi Fakultəsinin dekanı./ İqtisad elmlər namizədi, dosent",
       ENG: "Organizer / PhD in Economics, Associate Professor",
       TR: "Organizatör / İktisat Bilimleri Adayı, Doçent",
       RU: "Организатор / Кандидат экономических наук, доцент"
@@ -745,7 +745,7 @@ export const INITIAL_MENTORS: Mentor[] = [
     id: 1,
     name: "Zümrüd Nəsibova",
     role: {
-      AZE: "Təşkilatçı / Tyutor",
+      AZE: "Mühasibat və Kompüter Mühəndisliyi Fakultəsinin Tyutoru / Təşkilatçı",
       ENG: "Organizer / Tutor",
       TR: "Organizatör / Eğitmen",
       RU: "Организатор / Тьютор"
@@ -758,7 +758,7 @@ export const INITIAL_MENTORS: Mentor[] = [
     id: 2,
     name: "Gülsüm Bədirzadə",
     role: {
-      AZE: "Təşkilatçı / iqtisad üzrə fəlsəfə doktoru, dosent",
+      AZE: "İnformasiya vә Kompüter Mühәndisliyi Kafedrasının Müdüri / iqtisad üzrə fəlsəfə doktoru, dosent",
       ENG: "Organizer / PhD in Economics, Associate Professor",
       TR: "Organizatör / Ekonomi Doktoru, Doçent",
       RU: "Организатор / Доктор философии по экономике, доцент"
@@ -771,10 +771,10 @@ export const INITIAL_MENTORS: Mentor[] = [
     id: 3,
     name: "Yusif Şıxəliyev",
     role: {
-      AZE: "Mentor",
-      ENG: "Mentor",
-      TR: "Mentor",
-      RU: "Ментор"
+      AZE: "Texniki işlər üzrə mütəxəssis / Mentor",
+      ENG: "Technical staff / Mentor",
+      TR: "Teknik personel / Mentor",
+      RU: "Технический персонал / Ментор"
     },
     // Fayl yolu: public/images/mentors/yusif.png
     image: "/images/mentors/yusif.png",
@@ -789,7 +789,7 @@ export const INITIAL_MENTORS: Mentor[] = [
     id: 6,
     name: "Nərgiz Mikayılova",
     role: {
-      AZE: "Mentor",
+      AZE: "İnformasiya vә Kompüter Mühәndisliyi Kafedrasının Müəllimi/ Mentor",
       ENG: "Mentor",
       TR: "Mentor",
       RU: "Ментор"
@@ -797,7 +797,21 @@ export const INITIAL_MENTORS: Mentor[] = [
     // Fayl yolu: public/images/mentors/nargiz.png
     image: "/images/mentors/nargiz.png",
     social: {}
+  },
+  {
+    id: 4,
+    name: "Ayxan Bağırlı",
+    role: {
+      AZE: "Mentor",
+      ENG: "Technical staff / Mentor",
+      TR: "Teknik personel / Mentor",
+      RU: "Технический персонал / Ментор"
+    },
+    // Fayl yolu: public/images/mentors/nargiz.png
+    image: "/images/mentors/nargiz.png",
+    social: {}
   }
+  
 ];
 
 // --- New Gallery Data ---
