@@ -242,6 +242,9 @@ const AppContent: React.FC = () => {
         </div>
       )}
 
+      {/* Mentors Section */}
+      <Mentors />
+
       {/* Projects Grid */}
       <section ref={projectsSectionRef} className="py-20 px-4 md:px-8 max-w-7xl mx-auto min-h-[80vh]">
         <div className="flex flex-col md:flex-row items-end justify-between mb-8 border-b border-tech-slate/20 pb-4 gap-4">
@@ -290,9 +293,6 @@ const AppContent: React.FC = () => {
           </div>
         )}
       </section>
-
-      {/* Mentors Section */}
-      <Mentors />
 
       {/* General Gallery Section */}
       <GeneralGallery />

@@ -755,7 +755,7 @@ export const INITIAL_MENTORS: Mentor[] = [
     image: "/images/mentors/zumrud.png",
     social: {}
   },
-  // Alt sıra - 4 kişi
+  // Alt sıra - 3 kişi
   {
     id: 2,
     name: "Gülsüm Bədirzadə",
