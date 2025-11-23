@@ -15,7 +15,7 @@ export const INITIAL_SITE_SETTINGS: SiteSettings = {
   },
   heroSubtitle: {
     content: {
-      AZE: "İnqilabi yenilikləri kəşf edin, onları yaradan dahi insanlarla tanış olun və sabahımızı formalaşdıran layihələri araşdırın.",
+      AZE: "İnqilabi yenilikləri kəşf edin, onları yaradan insanlarla tanış olun və sabahımızı formalaşdıran layihələri araşdırın.",
       ENG: "Discover groundbreaking innovations, meet the brilliant minds behind them, and explore the projects shaping our tomorrow.",
       TR: "Çığır açan yenilikleri keşfedin, arkasındaki parlak zihinlerle tanışın ve yarınımızı şekillendiren projeleri inceleyin.",
       RU: "Откройте для себя революционные инновации, познакомьтесь с гениальными умами, стоящими за ними, и изучите проекты, формирующие наше завтра."
@@ -550,7 +550,7 @@ export const INITIAL_PROJECTS: Project[] = [
       TR: "Zirvə Lab projesi kapsamında geliştirilen bu 3D yazıcı, mühendislik ve programlamanın birleşimini sergiliyor. Cihaz, hem hassas kontrol hem de gelecekteki modifikasyonlara olanak tanıyan Arduino Mega ve RAMPS kalkanı üzerine kurulmuştur.\n\nProjenin temel amacı, öğrencilere dijital modellerin fiziksel nesnelere nasıl dönüştüğünü, G-kodlarının nasıl çalıştığını ve step motorların hassas kontrol prensiplerini öğretmektir. Bu yazıcı ile çeşitli robot parçaları, dişliler ve prototipler basılabilir.",
       RU: "Этот 3D-принтер, разработанный в рамках проекта Zirvə Lab, демонстрирует единство инженерии и программирования. Устройство построено на базе Arduino Mega и шилда RAMPS, что обеспечивает как точное управление, так и возможность будущей модификации.\n\nОсновная цель проекта — научить студентов тому, как цифровые модели превращаются в физические объекты, как работают G-коды и принципам точного управления шаговыми двигателями. С помощью этого принтера можно печатать различные детали роботов, шестеренки и прототипы."
     },
-    members: ["Əsgər Hacıyev", "Rəsul Qumruzov"],
+    members: ["Əsgər Hacıyev", "Rəsul Qumruzov", "Babayev Fuad"],
     projectLink: "",
     // Fayl yolları: public/images/projects/zirvelab/gallery1.png, gallery2.png
     gallery: [
